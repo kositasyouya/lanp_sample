@@ -26,4 +26,4 @@ try {
     <h1><?php echo "value[name]<br>";?></h1>
     <?php } ?>
 </body>
-</head>
+</html>
