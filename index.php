@@ -22,8 +22,8 @@ try {
     <title>LAMP TEST PAGE</title>
 </head>
 <body>
-    <?php foreach( $result as $value){?>
-    <h1><?php echo "value[name]<br>";?></h1>
+    <?php foreach( $result as $value){ ?>
+    <h1><?php echo "value[name]<br>"; ?></h1>
     <?php } ?>
 </body>
 </html>
