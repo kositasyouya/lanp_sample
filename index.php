@@ -1,26 +1,18 @@
 <?php
 $dsn = 'mysql:dbname=test_db;host=localhost;';
-$user = 'kositasyoya2';
-$password = 'Morijyobi4!';
+$user = 'kosita';
+$password = 'morijyobi';
 try {
 
 	$dbh = new PDO($dsn, $user, $password);
 
-
-
 	$sql = "select * from user;";
-
 	$result = $dbh->query($sql);
 
 } catch (PDOException $e) {
-
 	print "Failed: " . $e->getMessage() . "\n";
-
 	exit();
-
 }
-
-
 
 ?>
 
