@@ -1,3 +1,10 @@
+<?php
+
+$dsn = 'mysql:dbname=sample_db;host=localhost;';
+
+$user = 'kosita';
+
+$password = 'morijyobi';
 try {
 
     $dbh = new PDO($dsn, $user, $password);
