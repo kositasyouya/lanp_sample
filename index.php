@@ -48,11 +48,23 @@ try {
 		</div>
 	</div>
 
-    <?php if($_GET['fg'] == 1 ){ ?>
-        <P>Success</p>
-    <?php} elseif ($_GET['fg'] == 2 ){?>
-        <P>Failed</p>
-    <?php}?>
+    <div class="container">
+        <?php if($_GET['fg'] == 1 ){ ?>
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <strong>Success!</strong> 
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        <?php} elseif ($_GET['fg'] == 2 ){?>
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <strong>Failed!</strong> 
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        <?php}?>
+    </div>
 
 	<div class="container">
 		<ul class="nav nav-tabs">
